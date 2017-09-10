@@ -41,6 +41,17 @@ inline DT chop(DT n) {
 	return n;
 }
 
-inline CT chop(CT n) {
+inline CT chop(CT& n) {
 	return CT(chop(n.real()), chop(n.imag()));
+}
+
+template<int row, int column> Eigen::Matrix<CT, row, column> chop(Eigen::Matrix<CT, row, column, 0, row, column>& matrix) {
+	Eigen::Matrix<CT, row, column> ret;
+	for (int i = 0; i < matrix.rows(); i++) {
+		for (int j = 0; j < matrix.cols(); j++) {
+			cout << chop(matrix(i, j)) << endl;
+		}
+	}
+
+	return matrix;
 }

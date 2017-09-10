@@ -21,12 +21,21 @@ Matrix33 randHermitianMatrix() {
 
 int main() {
 	Matrix33 rm1 = Matrix33::Random();
-	cout << "Random matrix: " << endl << rm1 << endl;
-	cout << "\teigenvalues: " << endl << rm1.eigenvalues() << endl << endl;
+	cout << "Random matrix A: " << endl << rm1 << endl;
+	cout << "Eigenvalues of A: " << endl << rm1.eigenvalues() << endl;
+	Eigen::ComplexEigenSolver<Matrix33> es1(rm1);
+	cout << "Eigenvectors of A: " << endl << es1.eigenvectors() << endl << endl;
 
 	Matrix33 rm2 = randHermitianMatrix();
-	cout << "Random Hermitian Matrix: " << endl << rm2 << endl;
-	Matrix33::EigenvaluesReturnType ev = rm2.eigenvalues();
-	cout << "\teigenvalues: " << endl << rm2.eigenvalues() << endl << endl;
+	cout << "Random Hermitian Matrix B: " << endl << rm2 << endl;
+	cout << "Eigenvalues of B: " << endl << rm2.eigenvalues() << endl;
+	Eigen::ComplexEigenSolver<Matrix33> es2(rm2);
+	cout << "Eigenvectors of B: " << endl << es2.eigenvectors() << endl << endl;
+
+	Eigen::Matrix3d rm3 = Eigen::Matrix3d::Random();
+	cout << "Real random matrix C: " << endl << rm3 << endl;
+	cout << "Eigenvalues of C: " << endl << rm3.eigenvalues() << endl;
+	Eigen::EigenSolver<Eigen::Matrix3d> es3(rm3);
+	cout << "Eigenvectors of C: " << endl << es3.eigenvectors() << endl << endl;
 	return 0;
 }

@@ -8,7 +8,8 @@ DT dRand(DT min, DT max) {
 }
 
 CT cRand(DT maxNorm) {
-	DT norm = dRand(0, maxNorm);
+	// for uniform distribution, the propability of large norm complex is larger than small norm complex.
+	DT norm = sqrt(dRand(0, maxNorm * maxNorm));
 	DT arg = 2 * Pi * dRand();
 	return CT(norm * cos(arg), norm * sin(arg));
 }
