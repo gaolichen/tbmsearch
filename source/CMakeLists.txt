@@ -24,5 +24,5 @@ SET(TBM_MAIN_SRCS
 
 
 # INCLUDE_DIRECTORIES (${CMAKE_CURRENT_SOURCE_DIR}/../../eigen/)
-add_executable (tbmsearch ${STRBIT_MAIN_SRCS})
+add_executable (tbmsearch ${TBM_MAIN_SRCS})
 
