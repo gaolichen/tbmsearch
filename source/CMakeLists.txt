@@ -1,10 +1,5 @@
 #CMake config file for sources directory.
 
-# define variables here.
-
-# EIGEN_ROOT is the parent directory of the Eigen folder that contains files like Array, Core, Dense, etc.
-SET(EIGEN_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/../../eigen)
-
 # to add a source file, add cpp or cxx files to TBM_LIB_SRCS
 SET(TBM_LIB_SRCS
 	# somecode.cpp

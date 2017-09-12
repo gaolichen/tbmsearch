@@ -11,6 +11,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <cmath>
+#include <iostream>
 #include <Eigen/Dense>
 using namespace std;
 
