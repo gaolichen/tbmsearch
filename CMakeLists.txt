@@ -1,7 +1,7 @@
 # CMakeLists files of this project
 
 
-cmake_minimum_required (VERSION 2.8.11)
+cmake_minimum_required (VERSION 2.8.7)
 
 # define global variables here.
 
