@@ -55,4 +55,4 @@ template<int row, int column> Eigen::Matrix<CT, row, column> chop(Eigen::Matrix<
 	}
 
 	return matrix;
-// test}
+}
