@@ -37,5 +37,6 @@ int main() {
 	cout << "Eigenvalues of C: " << endl << rm3.eigenvalues() << endl;
 	Eigen::EigenSolver<Eigen::Matrix3d> es3(rm3);
 	cout << "Eigenvectors of C: " << endl << es3.eigenvectors() << endl << endl;
+	cout << "demo test" << endl;
 	return 0;
 }
