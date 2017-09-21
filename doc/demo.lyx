@@ -289,6 +289,10 @@ Download: http://eigen.tuxfamily.org
 Configure: change $EIGEN_ROOT in CMakeList.txt
 \end_layout
 
+\begin_layout Itemize
+C++ language tutorial: http://www.cplusplus.com/doc/tutorial/
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
